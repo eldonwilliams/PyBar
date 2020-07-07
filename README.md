@@ -6,21 +6,21 @@ PyBar.py contains two classes, one is a progressbar and one is a enum class.
 I used enums just cuz. I'll go over each enum in a minute
 ProgressBar contains 4 methods.
 
-## 1 | Methods of ProgressBar
+## 1 | Methods of ProgressBar [source](https://github.com/MrTops/PyBar/blob/master/PyBar.py#L43)
 this chapter will go over the methods of ProgressBar
 
-### 1.1 | addProgress(progress=1) 
+### 1.1 | ``addProgress(progress=1)`` [source](https://github.com/MrTops/PyBar/blob/master/PyBar.py#L52)
 adds a given amount of progress to the member's progress value.
 The default is 1 and the limit for progress is 100
 
-### 1.2 | removeProgress(progress=1)
+### 1.2 | ``removeProgress(progress=1)`` [source](https://github.com/MrTops/PyBar/blob/master/PyBar.py#L56)
 removes a given amount of progress from the member's progress value.
 The default is 1 and the limit for removing is 0
 
-### 1.3 | resetProgress()
+### 1.3 | ``resetProgress()`` [source](https://github.com/MrTops/PyBar/blob/master/PyBar.py#L60)
 removes all progress from the member's progress value, and sets it to 0
 
-### 1.4 | represent(*format, **specialFormat)
+### 1.4 | ``represent(*format, **specialFormat)`` [source](https://github.com/MrTops/PyBar/blob/master/PyBar.py#L64)
 returns a string object which represents the state of the ProgressBar
 format takes in enums from FormatEnums, specialFormat allows you to specify exact values for things used by the represent method
 
@@ -42,9 +42,9 @@ empty_char is the character to be displayed for a empty section
 Default: 10
 the amount of segments / sections to use
 
-## 2 | FormatEnums
+## 2 | FormatEnums [source](https://github.com/MrTops/PyBar/blob/master/PyBar.py#L14)
 
-### 2.1 | Percent Positions
+### 2.1 | Percent Positions [source](https://github.com/MrTops/PyBar/blob/master/PyBar.py#L18)
 ```py
     TOP_PERCENT = auto() #puts the percent / progress above the bar
     SIDE_PERCENT = auto() #puts the percent / progress on the same lines as the bar
@@ -52,7 +52,7 @@ the amount of segments / sections to use
     INTEGRATED_PERCENT = auto() #puts the percent / progress in the bar, the length of bar must be longer than percent
 ```
 
-### 2.2 | Side Characters
+### 2.2 | Side Characters [source](https://github.com/MrTops/PyBar/blob/master/PyBar.py#L23) 
 ```py
     CURLY_SIDE = auto() #makes the edges {} respectively
     PARENTHESES_SIDE = auto() #makes the edges () respectively
@@ -62,7 +62,7 @@ the amount of segments / sections to use
     ANGLE_SIDE = auto() #makes the edges <> respectively "I could not think of better name for it other than angle side please make a github issue if you have a better one"
 ```
 
-### 2.3 | Fill Characters
+### 2.3 | Fill Characters [source](https://github.com/MrTops/PyBar/blob/master/PyBar.py#L30)
 ```py
     ONE_FILL = auto() #makes the filled area "1"
     SMALL_ASCII_FILL = auto() #makes the filled area "■"
@@ -71,7 +71,7 @@ the amount of segments / sections to use
     ASCII_FILL = auto() #makes the filled area "█"
 ```
 
-### 2.4 | Empty Characters
+### 2.4 | Empty Characters [source](https://github.com/MrTops/PyBar/blob/master/PyBar.py#L36)
 ```py
     ZERO_EMPTY = auto() #makes the empty area "0"
     SPACE_EMPTY = auto() #makes the empty area " "
