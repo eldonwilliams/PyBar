@@ -1,3 +1,6 @@
+# Update: 12/11/2021
+Hello! It's been a year and a half since I made this. I've recently decided to clear out some spam repos I made, however, I've decided to keep this one. Not to show off my current skill, but to show where I was as a 12 year old. I don't think this code is at all good, it's honestly pretty inefficient and clutered, but I do have a tiny sentimental attachment to this, so I'm keeping it. If you're a potential employer; disregard this please.
+
 # PyBar
 pybar is a simple lib that offers a progress bar, pretty simple.
 
